@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Crystal Empire (TCE) Roblox game. Explore our server rules, high-rank guidelines, and more.">
+    <title>The Crystal Empire - Welcome</title>
+    <style>
+        /* Global Style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0d1a;
+            color: #f4f4f4;
+            margin: 0;
+            overflow: auto;
+        }
+
+        h1, h2, h3 {
+            color: #00BFFF; /* Azul */
+            text-shadow: 0px 0px 10px #fff;
+        }
+
+        p, li {
+            color: #c3c3c3;
+        }
+
+        a {
+            color: #00BFFF; /* Azul */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Welcome Screen */
+        #welcome-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('crystal_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #welcome-message {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #f4f4f4;
+        }
+
+        #enter-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #00BFFF;
+            color: #B0E0E6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #enter-btn:hover {
+            background-color: #00BFFF;
+        }
+
+        /* Content Section */
+        #content {
+            display: none;
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+
+        /* Rules and Guidelines Sections */
+        section {
+            margin-bottom: 40px;
+            opacity: 0; /* Initially hide sections */
+            transition: opacity 0.5s ease; /* Transition for visibility */
+        }
+
+        h2 {
+            border-bottom: 2px solid #00BFFF;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    background: #1f1f2e; /* Color de fondo */
+    color: #fff;
+    font-size: 12px; /* Tamaño del texto */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <div id="welcome-message">
+            <h1>Welcome to The Crystal Empire 🏰</h1>
+            <p>Make sure you read everything!</p>
+            <button id="enter-btn">Enter</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <section id="server-rules">
+            <h2>Server Rules 📜</h2>
+            <ul>
+                <li>[1] Swearing is strictly NOT allowed.</li>
+                <li>[2] Leaking personal information is FORBIDDEN. You will be permanently banned.</li>
+                <li>[3] Badmouthing is not accepted here.</li>
+                <li>[4] Show respect to all ranks.</li>
+                <li>[5] Begging for free items is not allowed. Repeat offenders will be Timed Out.</li>
+            </ul>
+            <p>More rules will be added as the game evolves!</p>
+            <p><a href="https://www.roblox.com/groups/16041577/Heavens-Kingdom#!/about">Join our Roblox group</a></p>
+        </section>
+
+        <section id="hr-guidelines">
+            <h2>High Rank Guidelines 📝</h2>
+            <p><strong>Account Security:</strong> Keep your account safe with 2-factor authentication.</p>
+            <p><strong>Confidentiality:</strong> HRs must not leak internal information. Violation will result in a warning or demotion.</p>
+            <p><strong>Role of a Guard:</strong> Guards protect workers and enforce rules within the castle.</p>
+            <p><strong>Striking Table:</strong> Use the strike system to warn or punish offenders following the outlined rules.</p>
+            <p><strong>Uniform:</strong> Guards must wear their uniform at all times using the <code>-uniform</code> command.</p>
+            <p>And much more!</p>
+        </section>
+
+        <section id="commands">
+            <h2>Commands 🛠️</h2>
+            <p>You are permitted to use the following commands:</p>
+            <ul>
+                <li><code>-warn (USERNAME) (REASON)</code></li>
+                <li><code>-award (USERNAME)</code> (Using this on yourself will result in a warning)</li>
+                <li><code>-arrest (USERNAME) (TIME)</code> (Example: <code>-arrest Roblox 15</code>)</li>
+                <li><code>-strikingtable</code></li>
+                <li><code>-awardscript</code></li>
+                <li><code>-ban (USERNAME) (REASON)</code> (Server bans them)</li>
+                <li>Utility Commands:</li>
+                <ul>
+                    <li><code>-to USERNAME</code> :chatlogs</li>
+                    <li><code>-bring USERNAME</code> :logs</li>
+                    <li><code>:view USERNAME</code></li>
+                    <li><code>:unview USERNAME</code></li>
+                </ul>
+            </ul>
+            <p>( MORE COMING SOON )</p>
+        </section>
+
+        <section id="hr-warnings">
+            <h2>HR Warning Scheme ⚠️</h2>
+            <p>HRs have their own warnings separate from workers. If you are caught breaking any HR regulations you will be warned.</p>
+            <p><strong>Verbal warnings:</strong> These warnings are simply a verbal reminder and are sent to you via a warning bot. Three verbal warnings accumulate to one official warning.</p>
+            <p><strong>Official Warnings:</strong> After receiving an official warning, you will be informed of what you did wrong. After three official warnings, you may be demoted by one rank for one month.</p>
+        </section>
+
+        <section id="promotions-discharges">
+            <h2>Promotions/Discharges ‼️</h2>
+            <p>Promotions occur periodically for high ranks who are seen working hard by royalty and management. The promotion period is usually at the end of the month, and you must have been in your rank for at least three weeks.</p>
+            <p>If an HR is discharged, they will be informed of the reason via a ticket.</p>
+        </section>
+
+        <section id="reports">
+            <h2>Reports 🚨</h2>
+            <p>It is your duty to handle reports if one has been sent to you if you are eligible, such as rule violations not requiring a Keeper+ to step in. You can also report people yourself via tickets.</p>
+        </section>
+
+        <section id="tools">
+            <h2>Tools + Their Meanings ❓</h2>
+            <ul>
+                <li><strong>Noclip Tool:</strong> Used to transport around the castle without being seen.</li>
+                <li><strong>AFK Sender:</strong> Used to send workers to the AFK room.</li>
+                <li><strong>Spawn Sender:</strong> Used to send workers to the spawn room.</li>
+                <li><strong>Announcements Key:</strong> Used to lock the announcements room door.</li>
+                <li><strong>Pitchfork:</strong> Used to damage players.</li>
+                <li><strong>Knife:</strong> Used to damage players (does slightly more damage than the pitchfork).</li>
+                <li>( MORE COMING SOON )</li>
+            </ul>
+        </section>
+
+        <section id="resignations">
+            <h2>Resignations 👋</h2>
+            <p>If you wish to resign, please make a ticket on the server. You do not need to explain your reasoning behind it if you do not want to.</p>
+            <p>The V.I.P. rank is only accessible to those who have served our kingdom for at least one month.<p>
+
+        <section id="hr-reforms">
+            <h2>High Rank Reforms 👮</h2>
+            <p>If the management team decides that you are not ready to be a High Rank after 2 weeks of being a Lower Rank, you will be demoted back down.</p>
+            <p>To be considered for a promotion, you must show leadership skills and assist other ranks as needed.</p>
+        </section>
+        <section id="callbacks">
+            <h2>HR Callbacks ☎️</h2>
+            <p>These are emergency callbacks to V.I.P. members if there is a lack of High Ranks protecting our Kingdom. Everyone has an opportunity to come back unless they were demoted.</p>
+        </section>
+        <section id="handling-duties">
+            <h2>Handling Duties 💼</h2>
+            <p>To set someone's duty (executive+), you must put the duty first, followed by any additional information. For example:</p>
+            <p><code>-setduty USER fashionista duty <3</code> (valid duty)</p>
+            <p><code>-setduty USER <3 fashionista duty</code> (invalid duty)</p>
+        </section>
+        <section id="award-sessions">
+            <h2>Award Sessions 🎉</h2>
+            <p>To host an award session, unlock the announcement room door when the time is right. Use the spawn sender on any glitchers. Call forward the person at the front and use the <code>-award</code> command on them to grant them 60 minutes of XP.</p>
+            <p>Once everyone has been awarded, announce the conclusion.</p>
+        </section>
+        <section id="rank-hierarchy">
+            <h2>Rank Hierarchy 👀</h2>
+            <p><strong>Crystal Guard:</strong> Hosting award sessions, dealing with workers breaking rules, and more.</p>
+            <p><strong>Royal Knight:</strong> Supervising guards, handing out duties, and issuing feedback.</p>
+            <p><strong>Crystal Lord:</strong> Supervising Guards and Knights, handling tickets, and moderating the Discord server.</p>
+        </section>
+        <section id="mental-health">
+            <h2>Mental Health Awareness ❤️</h2>
+            <p>The Crystal Empire cherishes our High Ranks! If you feel it is right, you can resign if needed. Please reach out to someone you trust if you are feeling overwhelmed.</p>
+            <p>A friendly reminder that at the end of each month, you will be added to a ticket to check up on your health!</p>
+        </section>
+        <section id="feedback">
+            <h2>Feedback 📬</h2>
+            <p>Your feedback is essential for our improvement. Please send your suggestions via ticket or DM an HR directly.</p>
+            <p>We take all feedback seriously and aim to make our community better for everyone.</p>
+          <p><a href="https://discord.gg/gzgyTNar">Our discord server, click here!</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 The Crystal Empire - All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to handle section visibility and transparency
+        const sections = document.querySelectorAll('section');
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const content = document.getElementById('content');
+
+        // Show content when entering
+        document.getElementById('enter-btn').addEventListener('click', () => {
+            welcomeScreen.style.opacity = '0';
+            setTimeout(() => {
+                welcomeScreen.style.display = 'none';
+                content.style.display = 'block';
+            }, 500);
+        });
+
+        // Function to adjust section visibility
+        const updateVisibility = () => {
+            const windowHeight = window.innerHeight;
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const isVisible = rect.top < windowHeight / 2 && rect.bottom > windowHeight / 2;
+                section.style.opacity = isVisible ? '1' : '0.3';
+            });
+        };
+
+        // Initial visibility check
+        updateVisibility();
+
+        // Update visibility on scroll
+        window.addEventListener('scroll', updateVisibility);
+    </script>
+</body>
+</html>
